@@ -6,10 +6,9 @@ import { Todo } from "./models/model";
 import { DragDropContext, DropResult } from "react-beautiful-dnd";
 
 const App: React.FC = () => {
-
   const [todo, setTodo] = useState<string>("");
   const [todos, setTodos] = useState<Todo[]>([]);
-  const [completedTodos,setCompletedTodos] = useState<Todo[]>([]);
+  const [completedTodos, setCompletedTodos] = useState<Todo[]>([]);
 
   const handelAdd = (e: React.FormEvent) => {
     e.preventDefault();
